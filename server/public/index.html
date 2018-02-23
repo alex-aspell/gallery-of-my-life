@@ -14,10 +14,10 @@
     <h1>Gallery of My Life</h1>
     <main ng-controller="ImageController as vm">
         <h3>Images</h3>
-        <section class="container">
-            <image src="./images/2018-01-30 17.37.36.jpg"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
+        <section class="container" ng-repeat="photo in vm.photoArray">
+            <image src="./images/{{photo.image}}"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
             <button ng-click="vm.upvote()">Upvote</button>
-            <div>{{image.votes}}</div>
+            <div>{{photo.votes}}</div>
             <button ng-click="vm.downvote()">Downvote</button>
         </section>
     </main>
