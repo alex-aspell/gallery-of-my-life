@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="galleryApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery of My Life</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Gallery of My Life</h1>
+    <main ng-controller="ImageController as vm">
+        <h3>Images</h3>
+        <section class="container">
+            <image src="./images/2018-01-30 17.37.36.jpg"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
+            <button ng-click="vm.upvote()">Upvote</button>
+            <div>0</div>
+            <button ng-click="vm.downvote()">Downvote</button>
+        </section>
+    </main>
+</body>
+</html>

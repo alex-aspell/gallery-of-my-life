@@ -6,7 +6,7 @@
     [x] Set up folders, packages, and dependencies
     [x] Add a database
     [x] Find picture and put it in project
-    [ ] Build html with AngularJS
+    [x] Build html with AngularJS
     [ ] Connect client.js to html
     [ ] Display one photo on the DOM on initial page load
     [ ] Create upvote and downvote buttons 
