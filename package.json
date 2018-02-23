@@ -1,0 +1,28 @@
+{
+  "name": "gallery-of-my-life",
+  "version": "1.0.0",
+  "description": "## This is a gallery of at least 6 photos that are meaningful to me with a description of why.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-aspell/gallery-of-my-life.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-aspell/gallery-of-my-life/issues"
+  },
+  "homepage": "https://github.com/alex-aspell/gallery-of-my-life#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "pg": "^7.4.1"
+  }
+}
