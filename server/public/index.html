@@ -17,7 +17,7 @@
         <section class="container">
             <image src="./images/2018-01-30 17.37.36.jpg"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
             <button ng-click="vm.upvote()">Upvote</button>
-            <div>0</div>
+            <div>{{image.votes}}</div>
             <button ng-click="vm.downvote()">Downvote</button>
         </section>
     </main>

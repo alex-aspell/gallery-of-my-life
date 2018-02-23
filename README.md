@@ -7,8 +7,8 @@
     [x] Add a database
     [x] Find picture and put it in project
     [x] Build html with AngularJS
-    [ ] Connect client.js to html
-    [ ] Display one photo on the DOM on initial page load
+    [x] Connect client.js to html
+    [x] Display one photo on the DOM on initial page load
     [ ] Create upvote and downvote buttons 
     [ ] Create put that adds an upvote to specific picture on the database
     [ ] Create put that downvotes (subtract 1) from the database
