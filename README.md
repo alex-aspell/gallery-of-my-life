@@ -4,8 +4,10 @@
 
 ### To Do
     [x] Set up folders, packages, and dependencies
-    [ ] Add a database
-    [ ] Find pictures and put them in project
+    [x] Add a database
+    [x] Find picture and put them in project
+    [ ] Build html with AngularJS
+    [ ] Connect client.js to html
     [ ] Display one photo on the DOM on initial page load
     [ ] Create upvote and downvote buttons 
     [ ] Create put that adds an upvote to specific picture on the database
