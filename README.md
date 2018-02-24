@@ -10,9 +10,9 @@
     [x] Connect client.js to html
     [x] Display one photo on the DOM on initial page load
     [x] Create upvote and downvote buttons 
-    [ ] Create put that adds an upvote to specific picture on the database
-    [ ] Create put that downvotes (subtract 1) from the database
-    [ ] Make a get function that displays the number of votes from the database on the DOM
+    [x] Create put that adds an upvote to specific picture on the database
+    [x] Create put that downvotes (subtract 1) from the database
+    [x] Make a get function that displays the number of votes from the database on the DOM
     [ ] Add click function to picture
         * this ng-click should hide the picture and reveal the description
         * look into having an opaque description so the image can still be seen

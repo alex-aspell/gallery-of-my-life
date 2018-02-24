@@ -15,7 +15,8 @@
     <main ng-controller="ImageController as vm">
         <h3>Images</h3>
         <section class="container" ng-repeat="photo in vm.photoArray">
-            <image src="./images/{{photo.image}}"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
+            <image ng-hide="description" ng-click="description=true" src="./images/{{photo.image}}"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
+            <div ng-show="description" ng-click="description=false">This is from my trip to Europe with my best friend.</div>
             <button ng-click="vm.upvote(photo)">Upvote</button>
             <div>{{photo.votes}}</div>
             <button ng-click="vm.downvote(photo)">Downvote</button>
