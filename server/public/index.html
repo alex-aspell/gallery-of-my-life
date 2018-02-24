@@ -16,9 +16,9 @@
         <h3>Images</h3>
         <section class="container" ng-repeat="photo in vm.photoArray">
             <image src="./images/{{photo.image}}"  height="350px" width="300px" description="Eiffel Tower Arm"></image>
-            <button ng-click="vm.upvote()">Upvote</button>
+            <button ng-click="vm.upvote(photo)">Upvote</button>
             <div>{{photo.votes}}</div>
-            <button ng-click="vm.downvote()">Downvote</button>
+            <button ng-click="vm.downvote(photo)">Downvote</button>
         </section>
     </main>
 </body>

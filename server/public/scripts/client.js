@@ -18,5 +18,29 @@ const imageController = app.controller('ImageController', ['$http', function($ht
         })
     }
 
+    self.upvote = function(photo){
+        $http({
+            method: 'PUT',
+            url: `/votes/up/${photo.id}`
+        }).then(function(response){
+            console.log('Trying to upvote', response);
+            self.getVotes();
+        }).catch(function(error){
+            console.log('No upvote', error)
+        })
+    }
+
+    self.downvote = function(photo){
+        $http({
+            method: 'PUT',
+            url: `/votes/down/${photo.id}`
+        }).then(function(response){
+            console.log('Trying to downvote', response);
+            self.getVotes();
+        }).catch(function(error){
+            console.log('No downvote', error)
+        })
+    }
+
     self.getVotes();
 }]); 
