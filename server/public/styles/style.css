@@ -1,0 +1,36 @@
+
+h1 {
+    font-family: Avante Garde;
+    font-size: 54px;
+}
+
+.subtitle {
+    font-family: Avante Garde;
+}
+#header {
+    border-bottom: solid;
+    border-color: gainsboro;
+    border-width: 1px;
+    margin: 10px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+    padding: 10px;
+}
+
+body {
+    font-family: Optima;
+    background-color: snow;
+    border: solid;
+    border-color: gainsboro;
+    border-width: 2px;
+    margin: 30px; 
+}
+
+.card-body {
+    background-color: white; 
+}
+
+.calligraphy {
+    height:100px;
+    width: 100px;
+}

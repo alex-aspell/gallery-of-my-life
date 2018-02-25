@@ -3,7 +3,7 @@ const router = express.Router();
 const pool = require('../modules/pool');
 
 router.get('/', (request, response) => {
-    sqlText = 'SELECT * FROM images';
+    sqlText = 'SELECT * FROM images ORDER BY id ASC';
     pool.query(sqlText)
     .then((result) => {
         console.log('got the stuff', result);
