@@ -16,5 +16,5 @@
     [x] Add click function to picture
         * this ng-click should hide the picture and reveal the description
         * look into having an opaque description so the image can still be seen
-    [ ] Repeat this for the rest of the photos
+    [x] Repeat this for the rest of the photos
     [ ] Add bootstrap with the photos in rows of 3 

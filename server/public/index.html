@@ -15,11 +15,15 @@
     <main ng-controller="ImageController as vm">
         <h3>Images</h3>
         <section class="container" ng-repeat="photo in vm.photoArray">
+            <div class="row">
+            <div class="col-md-4">
             <image ng-hide="description" ng-click="description=true" src="./images/{{photo.image}}"></image>
             <div ng-show="description" ng-click="description=false">{{photo.significance}}</div>
             <button ng-click="vm.upvote(photo)">Upvote</button>
             <div>{{photo.votes}}</div>
             <button ng-click="vm.downvote(photo)">Downvote</button>
+            </div>
+            </div>
         </section>
     </main>
 </body>
