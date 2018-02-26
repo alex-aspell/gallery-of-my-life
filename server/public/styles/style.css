@@ -7,6 +7,13 @@ h1 {
 .subtitle {
     font-family: Avante Garde;
 }
+
+.quote {
+    font-family: apple chancery; 
+    float: right;
+    padding-top: 30px;
+}
+
 #header {
     border-bottom: solid;
     border-color: gainsboro;
