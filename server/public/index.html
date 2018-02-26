@@ -24,16 +24,18 @@
         <h4 id="self" class="d-inline-flex justify-content-end">Self</h4>
     </section>
     <main ng-controller="ImageController as vm">
-       <section class="container">
+       <section class="container" id="gallery">
             <div class="row">
                 <div class="col-md-4" ng-repeat="photo in vm.photoArray">
                     <image  class="img-fluid rounded img-thumbnail" ng-hide="description" ng-click="description=true" src="./images/{{photo.image}}"></image>
-                        <p ng-show="description" ng-click="description=false">{{photo.significance}}</p>
+                        <div ng-click="description=false">
+                        <p ng-show="description" >{{photo.significance}}</p>
+                        </div>
                         <div ng-show="description">
-                        <button class="d-inline-flex justify-content-center btn-success" ng-click="vm.upvote(photo)">Upvote</button>
-                        <div class="d-inline-flex justify-content-center">{{photo.votes}}</div>
-                        <button class="d-inline-flex justify-content-center btn-danger" ng-click="vm.downvote(photo)">Downvote</button>
-                        <button class="d-inline-flex justify-content-end">Comment</button>
+                            <button class="d-inline-flex justify-content-center btn-success" ng-click="vm.upvote(photo)">Upvote</button>
+                            <div class="d-inline-flex justify-content-center">{{photo.votes}}</div>
+                            <button class="d-inline-flex justify-content-center btn-danger" ng-click="vm.downvote(photo)">Downvote</button>
+                            <button class="d-inline-flex justify-content-end">Comment</button>
                         </div>
                 </div>
             </div>
